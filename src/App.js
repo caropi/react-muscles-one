@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import HeadingOne from './components/HeadingOne'
+import HeadingOne from './components/HeadingOne';
+import ClickCounter from './components/ClickCounter'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HeadingOne title="This is one title" />
-        <HeadingOne title="Here is my name" />
-        <HeadingOne title="CARE-O-LINE" />
+        <HeadingOne title="The answer" />
+        <HeadingOne title="is" />
+        <HeadingOne title="42" />
+        <ClickCounter/>
       </header>
     </div>
   );
