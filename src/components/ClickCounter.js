@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Button from './Button'
+import Button from './Button';
 export default class ClickCounter extends Component {
     constructor(props) {
         super(props)
@@ -19,11 +19,18 @@ export default class ClickCounter extends Component {
     }
     render() {
         return (
-            <div>
-                {this.state.count === 42 ? (<img href="./42.gif" alt="so long and thanks for all the fish"/>) : (<p>Count to 42: {this.state.count}</p>)}
-                <Button onClick={this.handleCountUp} text="+"/>
-                <Button onClick={this.handleCountDown} text="-"/>
-            </div>
-        )
+          <div>
+            {this.state.count === 42 ? (
+              <img
+                src={require('./42.gif')}
+                alt="so long and thanks for all the fish"
+              />
+            ) : (
+              <p>Count to 42: {this.state.count}</p>
+            )}
+            <Button onClick={this.handleCountUp} text="+" />
+            <Button onClick={this.handleCountDown} text="-" />
+          </div>
+        );
     }
 }

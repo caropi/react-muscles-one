@@ -7,8 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <HeadingOne title="The answer" />
-        <HeadingOne title="is" />
-        <HeadingOne title="42" />
+        <HeadingOne title="is 42" />
         <ClickCounter/>
       </header>
     </div>
